@@ -13,7 +13,7 @@
 简体中文 | [English](docs/README_EN.md) | [繁體中文](docs/README_CHT.md)
 
 ---
-![如意金股首页](docs/assets/screenshot-home.png)
+![如意金股首页](屏幕截图 2026-07-17 164605.png)
 ## ✨ 功能特性
 
 | 能力 | 覆盖内容 |
