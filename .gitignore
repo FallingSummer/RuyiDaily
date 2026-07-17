@@ -103,3 +103,6 @@ docs/specs/
 /mverr.txt
 /rmerr.txt
 /rc.log
+
+# 前端依赖
+node_modules/
