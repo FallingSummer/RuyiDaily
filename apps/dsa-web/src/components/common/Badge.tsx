@@ -17,7 +17,7 @@ const variantStyles: Record<BadgeVariant, string> = {
   success: 'border-success/20 bg-success/10 text-success',
   warning: 'border-warning/20 bg-warning/10 text-warning',
   danger: 'border-danger/20 bg-danger/10 text-danger',
-  info: 'border-cyan/30 bg-cyan/12 text-cyan',
+  info: 'border-primary/30 bg-primary/12 text-primary',
   history: 'border-purple/20 bg-purple/10 text-purple',
 };
 
@@ -26,7 +26,7 @@ const glowStyles: Record<BadgeVariant, string> = {
   success: 'shadow-success/20',
   warning: 'shadow-warning/20',
   danger: 'shadow-danger/20',
-  info: 'shadow-cyan/20',
+  info: 'shadow-primary/20',
   history: 'shadow-purple/20',
 };
 

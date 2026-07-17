@@ -40,7 +40,7 @@ export const StatCard: React.FC<StatCardProps> = ({
           <div className="mt-2 text-2xl font-semibold text-foreground">{value}</div>
           {hint ? <div className="mt-2 text-sm text-secondary-text">{hint}</div> : null}
         </div>
-        {icon ? <div className="text-cyan">{icon}</div> : null}
+        {icon ? <div className="text-primary">{icon}</div> : null}
       </div>
     </div>
   );

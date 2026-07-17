@@ -29,7 +29,7 @@
   --card-foreground: 228 35% 12%;
   --popover: 0 0% 100%;
   --popover-foreground: 228 35% 12%;
-  --primary: 193 100% 43%;
+  --primary: 0 85% 45%;
   --primary-foreground: 216 33% 97%;
   --secondary: 214 32% 91%;
   --secondary-foreground: 228 35% 16%;
@@ -41,7 +41,7 @@
   --destructive-foreground: 210 33% 98%;
   --border: 217 28% 84%;
   --input: 217 28% 84%;
-  --ring: 193 100% 43%;
+  --ring: 0 85% 45%;
   --radius: 1rem;
   --elevated: 0 0% 100%;
   --hover: 214 29% 90%;
@@ -133,7 +133,7 @@
   --nav-brand-shadow: hsl(var(--primary) / 0.2);
 
   /* Shell Sidebar Custom */
-  --shell-sidebar-border: hsl(193 100% 43% / 0.35);
+  --shell-sidebar-border: hsl(var(--primary) / 0.35);
 
   /* Home page related (using HSL format) */
   --home-loading-ring-track: hsl(var(--primary) / 0.2);
@@ -162,9 +162,9 @@
   --home-strategy-stop: hsl(346 100% 63%);
   --home-strategy-take: hsl(38 100% 52%);
   --home-panel-border: hsl(218 24% 82% / 0.92);
-  --home-panel-border-hover: hsl(193 100% 43% / 0.2);
-  --home-panel-border-selected: hsl(193 100% 43% / 0.34);
-  --home-panel-gradient-start: hsl(193 100% 43% / 0.1);
+  --home-panel-border-hover: hsl(var(--primary) / 0.2);
+  --home-panel-border-selected: hsl(var(--primary) / 0.34);
+  --home-panel-gradient-start: hsl(var(--primary) / 0.1);
   --home-panel-gradient-mid: hsl(247 84% 66% / 0.08);
   --home-panel-gradient-end: hsl(218 22% 78% / 0.08);
   --home-panel-selected-shadow:
@@ -180,7 +180,7 @@
   --home-surface-button-bg: hsl(214 36% 97% / 0.98);
   --home-surface-button-bg-hover: hsl(214 40% 95% / 0.99);
   --home-surface-button-border: hsl(218 24% 84% / 0.94);
-  --home-surface-button-border-hover: hsl(193 100% 43% / 0.22);
+  --home-surface-button-border-hover: hsl(var(--primary) / 0.22);
   --home-state-icon-muted: hsl(var(--muted-text) / 0.85);
   --home-prose-border: hsl(var(--foreground) / 0.1);
   --home-prose-border-strong: hsl(var(--foreground) / 0.16);
@@ -188,16 +188,16 @@
   --home-prose-blockquote-bg: hsl(247 84% 66% / 0.08);
   --home-panel-shadow: 0 14px 32px hsl(220 22% 34% / 0.08), 0 4px 10px hsl(220 18% 28% / 0.04);
   --home-panel-shadow-hover: 0 18px 40px hsl(220 24% 32% / 0.12), 0 6px 16px hsl(220 20% 28% / 0.06);
-  --home-hero-border: hsl(193 100% 43% / 0.32);
-  --home-hero-gradient-start: hsl(193 100% 43% / 0.24);
+  --home-hero-border: hsl(var(--primary) / 0.32);
+  --home-hero-gradient-start: hsl(var(--primary) / 0.24);
   --home-hero-gradient-mid: hsl(247 84% 66% / 0.14);
   --home-hero-gradient-end: hsl(218 22% 82% / 0.14);
   --home-hero-shadow: 0 18px 44px hsl(220 24% 34% / 0.12), 0 8px 18px hsl(220 20% 30% / 0.06);
   --home-rail-border: hsl(218 24% 82% / 0.9);
   --home-rail-bg: linear-gradient(180deg, hsl(0 0% 100% / 0.98), hsl(214 36% 97% / 0.98));
   --home-rail-shadow: 0 14px 30px hsl(220 22% 34% / 0.09), 0 4px 10px hsl(220 18% 28% / 0.05);
-  --home-history-glow: hsl(193 100% 43% / 0.14);
-  --autocomplete-hover-bg: #04d1f6;
+  --home-history-glow: hsl(var(--primary) / 0.14);
+  --autocomplete-hover-bg: hsl(var(--primary) / 0.85);
 
   /* Shadows (using HSL format) */
   --shadow-soft-card: 0 12px 24px hsl(220 20% 34% / 0.09), 0 3px 8px hsl(220 16% 28% / 0.05);
@@ -213,18 +213,18 @@
   --settings-border-soft: hsl(218 22% 84% / 0.94);
   --settings-border-strong: hsl(218 18% 68% / 0.98);
   --settings-border-overlay: hsl(218 22% 72% / 0.92);
-  --settings-accent-shadow: hsl(190 100% 50% / 0.08);
-  --settings-primary-border: hsl(190 100% 50% / 0.26);
+  --settings-accent-shadow: hsl(var(--primary) / 0.08);
+  --settings-primary-border: hsl(var(--primary) / 0.26);
   --settings-primary-gradient:
-    linear-gradient(135deg, hsl(190 100% 50% / 0.96), hsl(191 100% 40% / 0.96));
+    linear-gradient(135deg, hsl(var(--primary) / 0.96), hsl(var(--primary) / 0.76));
   --settings-primary-text: hsl(205 71% 6%);
-  --settings-primary-shadow: hsl(190 100% 50% / 0.2);
-  --settings-primary-shadow-hover: hsl(190 100% 50% / 0.22);
+  --settings-primary-shadow: hsl(var(--primary) / 0.2);
+  --settings-primary-shadow-hover: hsl(var(--primary) / 0.22);
   --settings-secondary-border: hsl(218 22% 74% / 0.96);
   --settings-secondary-bg: hsl(214 36% 95% / 0.98);
-  --settings-secondary-border-hover: hsl(190 100% 50% / 0.38);
-  --settings-secondary-bg-hover: hsl(190 100% 50% / 0.12);
-  --settings-glow-hover: hsl(190 100% 50% / 0.38);
+  --settings-secondary-border-hover: hsl(var(--primary) / 0.38);
+  --settings-secondary-bg-hover: hsl(var(--primary) / 0.12);
+  --settings-glow-hover: hsl(var(--primary) / 0.38);
   --settings-skeleton-strong: hsl(218 20% 84% / 0.92);
   --settings-skeleton-soft: hsl(218 22% 92% / 0.96);
   --input-surface-bg: var(--bg-card);
@@ -277,12 +277,12 @@
   --login-accent-border: hsl(220 22% 32% / 0.72);
   --login-accent-text: hsl(223 36% 18%);
   --login-accent-glow: hsl(var(--primary) / 0.18);
-  --login-brand-start: hsl(222 36% 16%);
-  --login-brand-end: hsl(205 88% 48%);
-  --login-brand-button-start: hsl(194 78% 56%);
-  --login-brand-button-end: hsl(213 88% 56%);
-  --login-brand-button-start-hover: hsl(194 82% 52%);
-  --login-brand-button-end-hover: hsl(213 90% 52%);
+  --login-brand-start: hsl(var(--primary) / 0.35);
+  --login-brand-end: hsl(var(--primary) / 0.65);
+  --login-brand-button-start: hsl(var(--primary) / 0.7);
+  --login-brand-button-end: hsl(var(--primary) / 0.85);
+  --login-brand-button-start-hover: hsl(var(--primary) / 0.75);
+  --login-brand-button-end-hover: hsl(var(--primary) / 0.9);
   --login-button-text: hsl(210 40% 98%);
   --login-label-text: hsl(223 36% 14%);
   --login-hint-text: hsl(220 14% 34% / 0.9);
@@ -308,7 +308,7 @@
   --card-foreground: 210 33% 98%;
   --popover: 230 24% 10%;
   --popover-foreground: 210 33% 98%;
-  --primary: 190 100% 50%;
+  --primary: 0 88% 55%;
   --primary-foreground: 228 35% 8%;
   --secondary: 231 19% 15%;
   --secondary-foreground: 210 33% 94%;
@@ -320,7 +320,7 @@
   --destructive-foreground: 210 33% 98%;
   --border: 226 19% 20%;
   --input: 226 19% 20%;
-  --ring: 190 100% 50%;
+  --ring: 0 88% 55%;
   --elevated: 230 22% 12%;
   --hover: 231 20% 16%;
   --secondary-text: 228 16% 72%;
@@ -338,7 +338,7 @@
   --color-danger-alert-text: 349 100% 75%; /* Bright/light pink for dark mode */
   --color-danger-alert-border: 349 100% 63%;
   --color-danger-alert-bg: 349 100% 63%;
-  --autocomplete-hover-bg: #2dcae6;
+  --autocomplete-hover-bg: hsl(var(--primary) / 0.85);
   /* Tailwind-compatible accent colors (Dark theme) */
   --color-cyan-400: 188 78% 41%;
   --color-emerald-400: 152 69% 40%;
@@ -476,18 +476,18 @@
   --settings-border-soft: hsl(0 0% 100% / 0.08);
   --settings-border-strong: hsl(0 0% 100% / 0.2);
   --settings-border-overlay: hsl(0 0% 100% / 0.45);
-  --settings-accent-shadow: hsl(190 100% 50% / 0.1);
-  --settings-primary-border: hsl(190 100% 50% / 0.26);
+  --settings-accent-shadow: hsl(var(--primary) / 0.1);
+  --settings-primary-border: hsl(var(--primary) / 0.26);
   --settings-primary-gradient:
-    linear-gradient(135deg, hsl(190 100% 50% / 0.96), hsl(191 100% 40% / 0.96));
+    linear-gradient(135deg, hsl(var(--primary) / 0.96), hsl(var(--primary) / 0.76));
   --settings-primary-text: hsl(205 71% 6%);
-  --settings-primary-shadow: hsl(190 100% 50% / 0.2);
-  --settings-primary-shadow-hover: hsl(190 100% 50% / 0.22);
+  --settings-primary-shadow: hsl(var(--primary) / 0.2);
+  --settings-primary-shadow-hover: hsl(var(--primary) / 0.22);
   --settings-secondary-border: hsl(0 0% 100% / 0.08);
   --settings-secondary-bg: hsl(0 0% 100% / 0.03);
-  --settings-secondary-border-hover: hsl(190 100% 50% / 0.3);
-  --settings-secondary-bg-hover: hsl(190 100% 50% / 0.06);
-  --settings-glow-hover: hsl(190 100% 50% / 0.38);
+  --settings-secondary-border-hover: hsl(var(--primary) / 0.3);
+  --settings-secondary-bg-hover: hsl(var(--primary) / 0.06);
+  --settings-glow-hover: hsl(var(--primary) / 0.38);
   --settings-skeleton-strong: hsl(0 0% 100% / 0.1);
   --settings-skeleton-soft: hsl(0 0% 100% / 0.06);
   --input-surface-bg: var(--bg-card);
@@ -497,7 +497,7 @@
   --input-surface-focus-ring: 0 0 0 4px hsl(var(--primary) / 0.18);
   --settings-input-rest-border: hsl(var(--border) / 0.58);
   --gradient-primary:
-    linear-gradient(135deg, rgba(0, 212, 255, 0.96), rgba(0, 168, 204, 0.96));
+    linear-gradient(135deg, hsl(var(--primary) / 0.96), hsl(var(--primary) / 0.76));
 
   /* Chat UI Tokens (Dark) */
   --chat-avatar-user-bg: hsl(var(--primary) / 0.8);
@@ -541,11 +541,11 @@
   --login-accent-text: hsl(var(--primary) / 0.92);
   --login-accent-glow: hsl(var(--primary) / 0.2);
   --login-brand-start: hsl(var(--primary));
-  --login-brand-end: hsl(214 100% 62%);
-  --login-brand-button-start: hsl(194 96% 45%);
-  --login-brand-button-end: hsl(214 100% 56%);
-  --login-brand-button-start-hover: hsl(194 96% 50%);
-  --login-brand-button-end-hover: hsl(214 100% 62%);
+  --login-brand-end: hsl(var(--primary) / 0.75);
+  --login-brand-button-start: hsl(var(--primary) / 0.7);
+  --login-brand-button-end: hsl(var(--primary) / 0.85);
+  --login-brand-button-start-hover: hsl(var(--primary) / 0.8);
+  --login-brand-button-end-hover: hsl(var(--primary) / 0.95);
   --login-button-text: hsl(210 33% 98%);
   --login-label-text: hsl(0 0% 100%);
   --login-hint-text: hsl(215 20% 65%);
@@ -787,9 +787,9 @@
 }
 
 .badge-cyan {
-  background: rgba(0, 212, 255, 0.15);
+  background: hsl(var(--primary) / 0.15);
   color: var(--color-cyan);
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  border: 1px solid hsl(var(--primary) / 0.3);
 }
 
 .badge-purple {
@@ -1971,20 +1971,16 @@ textarea {
 }
 
 .btn-primary {
-  border: 1px solid rgba(0, 212, 255, 0.26);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 212, 255, 0.96),
-    rgba(0, 168, 204, 0.96)
-  );
+  border: 1px solid hsl(var(--primary) / 0.26);
+  background: var(--gradient-primary);
   color: #041118;
-  box-shadow: 0 12px 28px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 12px 28px hsl(var(--primary) / 0.2);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
   filter: brightness(1.04);
-  box-shadow: 0 18px 34px rgba(0, 212, 255, 0.22);
+  box-shadow: 0 18px 34px hsl(var(--primary) / 0.22);
 }
 
 .btn-secondary {
@@ -2030,7 +2026,7 @@ textarea {
 :root:not(.dark) .portfolio-page .btn-primary:hover:not(:disabled) {
   box-shadow:
     inset 0 1px 0 hsl(0 0% 100% / 0.18),
-    0 18px 34px rgba(0, 212, 255, 0.22);
+    0 18px 34px hsl(var(--primary) / 0.22);
 }
 
 .bg-hover {

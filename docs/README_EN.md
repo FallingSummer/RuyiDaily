@@ -1,6 +1,8 @@
 <div align="center">
 
-# AI Stock Analysis System
+# RuyiDailyStockAnalysis
+
+<p align="center"><strong>Author</strong>: fufu</p>
 
 [![GitHub stars](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=social)](https://github.com/ZhuLinsen/daily_stock_analysis/stargazers)
 [![CI](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml)

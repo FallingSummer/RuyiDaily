@@ -2,6 +2,7 @@ import type React from 'react';
 import { useState, useEffect } from 'react';
 import { motion, useMotionValue, useTransform, useSpring } from "motion/react";
 import { Lock, Loader2, Cpu, TrendingUp, Network, ShieldCheck } from "lucide-react";
+import { BrandMark } from '../components/common/BrandMark';
 import { Button, Input, ParticleBackground } from '../components/common';
 import { UiLanguageToggle } from '../components/i18n/UiLanguageToggle';
 import { useNavigate, useSearchParams } from 'react-router-dom';
@@ -122,13 +123,17 @@ const LoginPage: React.FC = () => {
           </motion.div>
 
           <div className="mt-8 flex flex-col items-center">
-            <h2 className="text-4xl font-extrabold tracking-tighter text-[var(--login-text-primary)] sm:text-6xl">
-              <span className="bg-gradient-to-r from-[var(--login-text-primary)] via-[var(--login-text-primary)] to-[var(--login-text-secondary)] bg-clip-text text-transparent">DAILY </span>
-              <span className="bg-gradient-to-r from-[var(--login-brand-start)] to-[var(--login-brand-end)] bg-clip-text text-transparent drop-shadow-[0_0_20px_var(--login-accent-glow)]">STOCK</span>
-            </h2>
-            <h3 className="mt-1 text-xl font-bold uppercase tracking-[0.5em] text-[var(--login-text-muted)]">
-              Analysis Engine
-            </h3>
+            <div className="flex items-center gap-3">
+              <BrandMark variant="icon" size={48} />
+              <div>
+                <h2 className="text-4xl font-extrabold tracking-tighter text-[var(--login-text-primary)] sm:text-5xl">
+                  <span className="bg-gradient-to-r from-[var(--login-brand-start)] to-[var(--login-brand-end)] bg-clip-text text-transparent drop-shadow-[0_0_20px_var(--login-accent-glow)]">如意金股</span>
+                </h2>
+                <h3 className="mt-1 text-base font-semibold uppercase tracking-[0.3em] text-[var(--login-text-muted)]">
+                  RuyiDailyStockAnalysis
+                </h3>
+              </div>
+            </div>
           </div>
 
           <motion.div 
@@ -256,7 +261,7 @@ const LoginPage: React.FC = () => {
           transition={{ delay: 0.6 }}
           className="mt-8 text-center font-mono text-xs uppercase tracking-wider text-[var(--login-text-muted)]"
         >
-          Secure Connection Established via DSA-V3-TLS
+          RuyiDailyStockAnalysis v0.1.0
         </motion.p>
       </div>
 
