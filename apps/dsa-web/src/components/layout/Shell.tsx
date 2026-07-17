@@ -37,7 +37,7 @@ export const Shell: React.FC<ShellProps> = ({ children }) => {
   }, [mobileOpen]);
 
   return (
-    <div className="relative min-h-screen text-foreground">
+    <div className="relative h-dvh w-full overflow-hidden text-foreground">
       <ColorBgBackground />
       <div className="pointer-events-none fixed inset-x-0 top-3 z-10 flex items-start justify-between px-3 lg:hidden">
         <button
@@ -54,7 +54,7 @@ export const Shell: React.FC<ShellProps> = ({ children }) => {
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1680px] px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
+      <div className="relative z-10 flex h-full w-full px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         <aside
           className={cn(
             'sticky top-3 z-40 hidden shrink-0 overflow-visible rounded-[1.5rem] border border-[var(--shell-sidebar-border)] bg-card/72 p-2.5 shadow-soft-card backdrop-blur-sm transition-[width] duration-200 lg:flex',
