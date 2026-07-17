@@ -1,5 +1,5 @@
 {
-  "name": "daily-stock-analysis-desktop",
+  "name": "ruyidailystockanalysis",
   "version": "3.21.0",
   "private": true,
   "main": "main.js",
@@ -56,5 +56,7 @@
     "mac": {
       "target": "dmg"
     }
-  }
+  },
+  "author": "fufu",
+  "description": "如意金股 - AI Stock Analysis System"
 }

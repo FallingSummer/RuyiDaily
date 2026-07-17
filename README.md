@@ -1,6 +1,8 @@
 <div align="center">
 
-# 📈 如意每日金股分析系统（RuyiDailyStockAnalysis）
+# 📈 如意金股（RuyiDailyStockAnalysis）
+
+> **作者**: fufu
 
 [![GitHub stars](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=social)](https://github.com/ZhuLinsen/daily_stock_analysis/stargazers)
 [![CI](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml)
